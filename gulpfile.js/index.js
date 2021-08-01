@@ -127,12 +127,7 @@ function clean() {
 }
 
 function deploy() {
-  let tasks = folders.map((folder) => {
-    return gulp
-      .src(getMultiPageSrcPath(envOptions.deploySrc, folder))
-      .pipe($.ghPages());
-  });
-  return merge(tasks);
+  return gulp.src(envOptions.deploySrc).pipe($.ghPages());
 }
 
 function watch() {

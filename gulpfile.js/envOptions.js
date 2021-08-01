@@ -57,7 +57,7 @@ let envOptions = {
     src: distPath,
   },
   browserDir: `${distPath}`,
-  deploySrc: `${distPath}/**/*`,
+  deploySrc: `${distPath}/**/**/*`,
   distPath,
   srcPath
 };
