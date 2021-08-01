@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  //Roboto,Medium Italic
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1.5;
+ 
+}
+img {
+  vertical-align: middle;
+}

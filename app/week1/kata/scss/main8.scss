@@ -1,0 +1,37 @@
+@import "reset";
+
+.container {
+  width: 640px;
+  margin: 0 auto;
+}
+.content {
+  display: flex;
+}
+
+.news {
+  margin-right: 20px;
+  &__item {
+    margin-bottom: 24px;
+    display: flex;
+    &__img {
+      margin-right: 20px;
+    }
+  }
+}
+.textWrapper {
+  h2 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+.footer {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  text-align: center;
+}

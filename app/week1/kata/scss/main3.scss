@@ -1,0 +1,49 @@
+@import "reset";
+img{
+    vertical-align: middle;
+}
+.container {
+  width: 640px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  margin-bottom: 24px;
+}
+.news {
+  width: 404px;
+  margin-right: 20px;
+  &__item {
+    display: flex;
+    & + & {
+      margin-top: 24px;
+    }
+    &__img {
+      width: 96px;
+      height: 96px;
+      margin-right: 20px;
+    }
+  }
+}
+.ad {
+  img {
+    width: 216px;
+    height: 216px;
+  }
+}
+.textWrapper {
+  .title {
+    font-style: 20px;
+    line-height: 1.2;
+  }
+  p {
+    font-style: 16px;
+    line-height: 1.2;
+  }
+}
+.footer {
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  font-style: 16px;
+  line-height: 1.5;
+}

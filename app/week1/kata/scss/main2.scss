@@ -1,0 +1,56 @@
+@import "reset";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img {
+  vertical-align: middle;
+}
+.container {
+  width: 640px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 24px;
+  .wrapper {
+    display: flex;
+  }
+}
+.news {
+  width: 404px;
+  margin-right: 20px;
+  &__item {
+    display: flex;
+    & + & {
+      margin-top: 24px;
+    }
+    &__img {
+      width: 96px;
+      height: 96px;
+      margin-right: 20px;
+    }
+  }
+}
+.textWrapper {
+  .title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  p {
+    font-style: 16px;
+    line-height: 1.5;
+  }
+}
+.ad {
+  &__img {
+    width: 216px;
+    height: 216px;
+  }
+}
+.footer {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  text-align: center;
+}
