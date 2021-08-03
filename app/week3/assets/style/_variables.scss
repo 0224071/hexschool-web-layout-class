@@ -1,0 +1,123 @@
+//Layout
+$widths: (
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto,
+);
+$heights: (
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto,
+);
+$max-width-desktop: 992px;
+$max-width-pad: 768px;
+$max-width-mobile: 576px;
+$max-width-phone: 375px;
+
+$grid-breakpoints: (
+  desktop: $max-width-desktop,
+  pad: $max-width-pad,
+  mobile: $max-width-mobile,
+  phone: $max-width-phone,
+);
+
+$grid-breakpoints-infix: (
+  lg: $max-width-desktop,
+  md: $max-width-pad,
+  sm: $max-width-mobile,
+  xs: $max-width-phone,
+);
+$gutter-width: 30px;
+$grid-num: 12;
+//Space
+$space: 8px;
+$custom-margin-space: (
+  "20": 20px,
+  "30": 30px,
+  "64": 64px,
+);
+$custom-padding-space: (
+  "30": 30px,
+  "60": 60px,
+  "80": 80px,
+  "88": 88px,
+);
+//Font
+$font-size-base: 1rem; //browser default:16px
+$font-size-sm: $font-size-base * 0.875;
+$font-size-lg: $font-size-base * 1.25;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$line-height-base: 1.5;
+$line-height-sm: 1.25;
+$line-height-lg: 2;
+
+$font-weight-base: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+$font-weights: (
+  "base": $font-weight-base,
+  "medium": $font-weight-medium,
+  "bold": $font-weight-bold,
+  "black": $font-weight-black,
+);
+
+$font-family-noto: "Noto Sans TC";
+$font-family-roboto: "Roboto";
+$font-family-base: $font-family-roboto, $font-family-noto, sans-serif;
+
+//Color
+//gray-color-variables
+$white: #ffffff;
+$gray-400: #707070;
+$gray-700: #212529;
+$black: #000000;
+
+$grays: (
+  "400": $gray-400,
+  "700": $gray-700,
+);
+
+//color-variables
+$pink: #aa06010d;
+$red: #aa0601;
+$red-dark: #650300;
+
+$colors: (
+  "pink": $pink,
+  "red": #aa0601,
+  "red-dark": $red-dark,
+  "gray": $gray-400,
+  "gray-dark": $gray-700,
+  "white": $white,
+  "black": $black,
+);
+
+//theme-color-variables
+$primary: $red;
+$secondary: $red-dark;
+$success: $pink;
+$light: $white;
+$dark: $black;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "light": $light,
+  "dark": $dark,
+  "gray": $gray-400,
+  "gray-dark": $gray-700,
+);

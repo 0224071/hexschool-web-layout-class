@@ -7,67 +7,239 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-    <div class="header">
-
-        <div class="logo">
-            <img src="./assets/images/logo-new_工作區域 1.png" alt="logo">
-        </div>
-        <ul class="menu">
-            <li><a href="#">系列鏡框</a></li>
-            <li><a href="#">門市據點</a></li>
-            <li><a href="#">部落格</a></li>
-            <li><a href="#">常見問題</a></li>
-        </ul>
-
-    </div>
-    <div class="banner">
-        <div class="banner__content container">
-            <h1>Promise-Desert 2020 早春系列<br><span>看得清，才能看得遠</span></h1>
-        </div>
-    </div>
-    <div class="info">
-        <div class="container">
-            <h2>用專業的心，做專業的事</h2>
-            <ul class="infoList">
-                <li class="card">
-                    <img src="./assets/images/icon-dollar.svg" alt="dollar">
-                    <h3>單一價格</h3>
-                    <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
-                </li>
-                <li class="card">
-                    <img src="./assets/images/icon-clock-black.svg" alt="black">
-                    <h3>20 分鐘即可取件</h3>
-                    <p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
-                </li>
-                <li class="card">
-                    <img src="./assets/images/icon-heart.svg" alt="heart">
-                    <h3>安心售後服務</h3>
-                    <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
-                </li>
-                <li class="card">
-                    <img src="./assets/images/icon-glasses.svg" alt="glasses">
-                    <h3>關於鏡片</h3>
-                    <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+    <header class="header bg-primary">
+        <div class="headerContainer d-flex justify-content-between flex-wrap justify-content-sm-center">
+            <div class="header__logo d-flex align-items-center">
+                <img src="./assets/images/logo-new_工作區域 1.png" alt="logo">
+            </div>
+            <ul class="header__nav row  align-items-center text-center">
+                <li class="header__nav__item mr-64 mr-md-5 m-sm-0 col-sm-6"><a href="#"
+                        class="header__nav__link d-block text-light">系列鏡框</a></li>
+                <li class="header__nav__item mr-64 mr-md-5 m-sm-0 col-sm-6"><a href="#"
+                        class="header__nav__link d-block text-light">門市據點</a></li>
+                <li class="header__nav__item mr-64 mr-md-5 m-sm-0 col-sm-6"><a href="#"
+                        class="header__nav__link d-block text-light">部落格</a></li>
+                <li class="header__nav__item col-sm-6"><a href="#" class="header__nav__link d-block text-light">常見問題</a>
                 </li>
             </ul>
         </div>
+    </header>
+    <div class="banner text-secondary">
+        <div class="banner__content container d-flex align-items-center justify-content-end">
+            <h1 class="text-right">Promise-Desert 2020 早春系列<br><span class="font-weight-bold">看得清，才能看得遠</span></h1>
+        </div>
+    </div>
+    <div class="info bg-success pt-60  pb-80 pt-sm-4 pb-sm-5">
+        <div class="container">
+            <h2 class="text-center font-weight-bold mb-5  text-secondary">用專業的心，做專業的事</h2>
+            <ul class="info__list row">
+                <li class="info__list__item col-3 col-md-6 col-sm-12 mb-sm-5">
+                    <img class="info__list__img mb-3 mx-auto d-block" src="./assets/images/icon-dollar.svg"
+                        alt="dollar">
+                    <h3 class="info__list__title mb-1 font-weight-bold text-center  text-secondary">單一價格</h3>
+                    <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+                </li>
+                <li class="info__list__item col-3 col-md-6 col-sm-12 mb-sm-5">
+                    <img class="info__list__img mb-3 mx-auto d-block" src="./assets/images/icon-clock.svg" alt="black">
+                    <h3 class="info__list__title mb-1 font-weight-bold text-center  text-secondary">20 分鐘即可取件</h3>
+                    <p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
+                </li>
+                <li class="info__list__item col-3 col-md-6 col-sm-12 mb-sm-5">
+                    <img class="info__list__img mb-3 mx-auto d-block" src="./assets/images/icon-heart.svg" alt="heart">
+                    <h3 class="info__list__title mb-1 font-weight-bold text-center  text-secondary">安心售後服務</h3>
+                    <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+                </li>
+                <li class="info__list__item col-3 col-md-6 col-sm-12 mb-sm-5">
+                    <img class="info__list__img mb-3 mx-auto d-block" src="./assets/images/icon-glasses.svg"
+                        alt="glasses">
+                    <h3 class="info__list__title mb-1 font-weight-bold text-center  text-secondary">關於鏡片</h3>
+                    <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+                </li>
+            </ul>
 
+        </div>
     </div>
-    <div class="classic">
-        <h2>經典系列鏡框</h2>
-        <ul class="imgList">
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+    <div class="classic pt-60 pb-80 pt-sm-4 pb-sm-5">
+        <div class="container">
+            <h2 class="text-secondary text-center font-weight-bold mb-5">經典系列鏡框</h2>
+            <ul class="classic__list">
+                <li class="row mb-4 position-relative">
+                    <img class="col-7 col-sm-12" src="./assets/images/product-1.png" alt="product optical">
+                    <h3
+                        class="classic__list__title font-italic text-primary font-weight-black d-flex align-items-center col-5 position-sm-center">
+                        <img src="./assets/images/icon-diamond.svg" class="mr-1" alt="diamond">
+                        <span class="text-uppercase">optical</span>
+                    </h3>
+                </li>
+                <li class="row mb-4 flex-row-reverse flex-md-row position-relative">
+                    <img class="col-7 col-sm-12" src="./assets/images/product-2.png" alt="product sunglasses">
+                    <h3
+                        class="classic__list__title font-italic text-primary font-weight-black d-flex align-items-center col-5 position-sm-center">
+                        <img src="./assets/images/icon-sun.svg" class="mr-1" alt="sun">
+                        <span class="text-uppercase">sunglasses</span>
+                    </h3>
+                </li>
+                <li class="row mb-4 position-relative">
+                    <img class="col-7 col-sm-12" src="./assets/images/product-3.png" alt="product functional">
+                    <h3
+                        class="classic__list__title font-italic text-primary font-weight-black d-flex align-items-center col-5 position-sm-center">
+                        <img src="./assets/images/icon-thunder.svg" class="mr-1" alt="thunder">
+                        <span class="text-uppercase">functional</span>
+                    </h3>
+                </li>
+            </ul>
+        </div>
     </div>
+    <div class="co-branding pt-60 pb-80 pt-sm-4 pb-sm-5">
+        <div class="container">
+            <h2 class="text-light font-weight-bold mb-5 text-center">聯名設計鏡框</h2>
+            <ul class="co-branding__list row">
+                <li class="co-branding__list__item  col-6 col-sm-12 mb-sm-2">
+                    <a href="javascript:;" class="d-block brightness-effect">
+                        <img src="./assets/images/product-8.png" alt="Double A+">
+                        <h3 class="font-weight-bold text-primary position-center w-100 text-center">Double A+</h3>
+                    </a>
+                </li>
+                <li class="co-branding__list__item  col-6 col-sm-12">
+                    <a href="javascript:;" class="d-block brightness-effect">
+                        <img src="./assets/images/product-9.png" alt="YOUTH">
+                        <h3 class="font-weight-bold text-primary position-center w-100 text-center">YOUTH</h3>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="comment pt-60 pb-80 pt-sm-4 pb-sm-5">
+        <div class="container">
+            <h2 class="text-secondary font-weight-bold mb-5 text-center ">顧客推薦</h2>
+            <ul class="comment__list row">
+                <li class="comment__list__item col-3 col-md-6 col-sm-12 mb-md-4 mb-sm-2">
+                    <div class="commentCard h-100">
+                        <img src="assets/images/rec-1.png">
+                        <div class="commentCard__body ">
+                            <div>
+                                <h3 class="commentCard__title gray-dark font-weight-medium mb-1">Jessy</h3>
+                                <p class="gray-dark">眼鏡品質優良，下次還會想來這邊購買！</p>
+                            </div>
+                            <time class="text-gray">2021/06/20</time>
+                        </div>
+                    </div>
+                </li>
+                <li class="comment__list__item col-3 col-md-6 col-sm-12 mb-md-4 mb-sm-2">
+                    <div class="commentCard h-100">
+                        <img src="assets/images/rec-2.png">
+                        <div class="commentCard__body ">
+                            <div>
+                                <h3 class="commentCard__title gray-dark font-weight-medium">凱倫</h3>
+                                <p class="gray-dark">做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
+                            </div>
+                            <time class="text-gray">2021/04/18</time>
+                        </div>
+                    </div>
+                </li>
+                <li class="comment__list__item col-3 col-md-6 col-sm-12 mb-sm-2">
+                    <div class="commentCard h-100">
+                        <img src="assets/images/rec-3.png">
+                        <div class="commentCard__body ">
+                            <div>
+                                <h3 class="commentCard__title gray-dark font-weight-medium">悠悠</h3>
+                                <p class="gray-dark">謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
+                            </div>
+                            <time class="text-gray">2020/12/25</time>
+                        </div>
+                    </div>
+                </li>
+                <li class="comment__list__item col-3 col-md-6 col-sm-12 mb-sm-2">
+                    <div class="commentCard h-100">
+                        <img src="assets/images/rec-4.png">
+                        <div class="commentCard__body ">
+                            <div>
+                                <h3 class="commentCard__title gray-dark font-weight-medium mb-1">Kyuan</h3>
+                                <p class="gray-dark">服務很好，品質沒有任何問題，非常喜歡。</p>
+                            </div>
+                            <time class="text-gray"> 2020/10/31</time>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="contact bg-success pt-60 pb-80  pt-sm-4 pb-sm-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-12">
+                    <h2 class="font-weight-bold mb-3 text-center">聯絡我們</h2>
+                    <p class="mb-20">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+                    <form class="contact__form" onsubmit="event.preventDefault();">
+                        <label class="contact__form__label d-block" for="contact_name">姓名</label>
+                        <input class="mb-1 contact__form__input" type="text" placeholder="陳小明" id="contact_name">
+                        <label class="contact__form__label d-block" for="contact_tel">聯絡電話</label>
+                        <input class="mb-1 contact__form__input" type="tel" placeholder="0912-345-678" id="contact_tel">
+                        <label class="contact__form__label d-block" for="contact_email">電子郵件</label>
+                        <input class="mb-1 contact__form__input" type="email" placeholder="example@email.com"
+                            id="contact_email">
+                        <label class="contact__form__label d-block" for="contact_response">意見反應</label>
+                        <textarea placeholder="請輸入您的意見" id="contact_response" rows="6"
+                            class="contact__form__input"></textarea>
+                        <label>
+                            <input type="checkbox">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+                        </label>
+                        <div class="text-center mt-5">
+                            <button type="submit"
+                                class="contact__form__btn bg-primary text-light  font-weight-bold">確認送出</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer bg-primary text-light pt-4 pt-sm-3">
+        <div class="container">
+            <div class="row no-gutter">
+                <div class="footer__nav col-12 col-sm-6 row no-gutter justify-content-between mb-3 order-sm-2">
+                    <ul class="col-auto d-flex align-items-center d-sm-none">
+                        <li class="mr-6 mr-lg-5"><a class="d-block text-light" href="javascript:;">首頁</a></li>
+                        <li class="mr-6 mr-lg-5"><a class="d-block text-light" href="javascript:;">系列鏡框</a></li>
+                        <li class="mr-6 mr-lg-5"><a class="d-block text-light" href="javascript:;">門市據點</a></li>
+                        <li class="mr-6 mr-lg-5"><a class="d-block text-light" href="javascript:;">部落格</a></li>
+                        <li><a class="d-block text-light" href="javascript:;">常見問題</a></li>
+                    </ul>
+                    <ul class="col-auto  col-sm-12 footer__socialList  d-flex justify-content-end">
+                        <li class="mr-4"><a class="d-block" href="javascript:;"><img class="footer__socialList__img"
+                                    src="./assets/images/icon-fb.svg" alt="fb"></a></li>
+                        <li class="mr-4"><a class="d-block" href="javascript:;"><img class="footer__socialList__img"
+                                    src="./assets/images/icon-line.svg" alt="line"></a>
+                        </li>
+                        <li><a class="d-block" href="javascript:;"><img class="footer__socialList__img"
+                                    src="./assets/images/icon-ig.svg" alt="ig"></a></li>
+                    </ul>
+                </div>
+                <ul class="footer__contactList col-12 col-sm-6 mb-3 order-sm-1">
+                    <li class="footer__contactList__item">
+                        <a href="javascript:;" class="text-light"> <img src="./assets/images/icon-phone.svg" alt="phone"
+                                class="footer__contactList__img mr-2 mr-md-1">0800-000-000</a>
+                    </li>
+                    <li class="footer__contactList__item">
+                        <a href="javascript:;" class="text-light"><img src="./assets/images/icon-mail.svg" alt="email"
+                                class="footer__contactList__img mr-2 mr-md-1">glasses@business.com</a>
+                    </li>
+
+                </ul>
+                <div class="footer__copyright col-12 py-4 py-sm-2 row no-gutter justify-content-between order-sm-3">
+                    <h3 class="col-auto col-sm-12 mb-sm-1">Copyright © 2020 Glasses.All rights reserved.</h3>
+                    <ul class="footer__copyright__list col-auto col-sm-12 d-flex  flex-sm-column">
+                        <li class="mr-6 mb-sm-1"><a href="javascript:;" class="text-light">隱私權政策</a></li>
+                        <li><a href="javascript:;" class="text-light">服務條款</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

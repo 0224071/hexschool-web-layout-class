@@ -1,0 +1,46 @@
+.header {
+  padding: 30px 88px;
+  @include desktop {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include mobile {
+    padding: 0;
+  }
+  &__logo {
+    width: 80px;
+    @include mobile {
+      width: 48px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  &__nav {
+    @include mobile {
+      width: 100%;
+    }
+    &__item {
+      @include mobile {
+        border: 1px solid $white;
+      }
+    }
+    &__link {
+      font-size: 20px;
+      @include mobile {
+        padding: 8px 54px;
+      }
+    }
+  }
+}
+.headerContainer {
+    padding: 0 $gutter-width/2;
+    margin: 0 auto;
+    @include desktop {
+      max-width: 690px;
+    }
+    @include mobile {
+      padding: 0;
+      margin: 0;
+      max-width: none;
+    }
+  }

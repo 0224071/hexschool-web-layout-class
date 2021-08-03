@@ -1,0 +1,145 @@
+//custom margin size
+@each $key, $size in $custom-margin-space {
+  @include make-margin-space($key, $size);
+}
+//custom margin size
+@each $key, $size in $custom-padding-space {
+  @include make-padding-space($key, $size);
+}
+//margin, m-*,mt-*,mb-*,ml-*,mr-*,mx-*,my-*
+@for $i from 0 through 6 {
+  @include make-margin-space($i, $i * $space);
+}
+
+@each $infix, $max-width in $grid-breakpoints-infix {
+  @for $i from 0 through 6 {
+    @media (max-width: $max-width) {
+      @include make-margin-space(#{$infix + "-" + $i}, $i * $space);
+    }
+  }
+}
+
+//padding, p-*,pt-*,pb-*,pl-*,pr-*,px-*,py-*
+@for $i from 0 through 6 {
+  @include make-padding-space($i, $i * $space);
+}
+@each $infix, $max-width in $grid-breakpoints-infix {
+  @for $i from 0 through 6 {
+    @media (max-width: $max-width) {
+      @include make-padding-space(#{$infix + "-" + $i}, $i * $space);
+    }
+  }
+}
+
+//color, bg-*,text-*,border-*
+@include make-theme-colors($theme-colors);
+//font-weight, font-weight-*
+@include make-font-weights($font-weights);
+//width, w-*
+@each $key, $value in $widths {
+  .w-#{$key} {
+    width: $value;
+  }
+}
+.w-md-50 {
+  @include pad {
+    width: 50%;
+  }
+}
+//height, h-*
+@each $key, $value in $heights {
+  .h-#{$key} {
+    height: $value;
+  }
+}
+.d-flex {
+  display: flex;
+}
+.d-block {
+  display: block;
+}
+@include mobile {
+  .d-sm-none {
+    display: none;
+  }
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-md-row {
+  @include pad() {
+    flex-direction: row;
+  }
+}
+
+@include mobile() {
+  .justify-content-sm-center {
+    justify-content: center;
+  }
+  .flex-sm-column {
+    flex-direction: column;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.font-italic {
+  font-style: italic;
+}
+
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.brightness-effect {
+  @include image-filter(#ffffff, 0.5);
+}
+.position-center {
+  @include position-center;
+}
+
+@include mobile {
+  .position-sm-center {
+    @include position-center;
+  }
+}

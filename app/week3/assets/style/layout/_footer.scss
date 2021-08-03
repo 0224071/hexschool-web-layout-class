@@ -1,0 +1,45 @@
+.footer {
+    &__socialList {
+      &__img {
+        width: 48px;
+        @include desktop {
+          width: 24px;
+        }
+      }
+    }
+    &__contactList {
+      font-size: 36px;
+      @include desktop {
+        font-size: 20px;
+      }
+      @include mobile {
+        font-size: 16px;
+      }
+      &__item {
+        & + & {
+          margin-top: 30px;
+          @include desktop {
+            margin-top: 12px;
+          }
+          @include mobile {
+            margin-top: 6px;
+          }
+        }
+      }
+      &__img {
+        width: 36px;
+        @include desktop {
+          width: 18px;
+        }
+        @include mobile {
+          width: 15px;
+        }
+      }
+    }
+    &__copyright {
+      border-top: 1px solid $white;
+      &__list {
+        font-size: 14px;
+      }
+    }
+  }

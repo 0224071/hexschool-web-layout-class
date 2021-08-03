@@ -13,7 +13,14 @@
 
 ## Week 2
 
-2. 第二週 - 個人網頁
+1. 第二週 - 個人網頁
 
    - [Github](https://github.com/0224071/hexschool-web-layout-class/tree/main/app/week2)
    - [Github Pages](https://0224071.github.io/hexschool-web-layout-class/week2/index.html)
+
+## Week 3
+
+3. 第三週 - 眼鏡形象網站
+
+   - [Github](https://github.com/0224071/hexschool-web-layout-class/tree/main/app/week3)
+   - [Github Pages](https://0224071.github.io/hexschool-web-layout-class/week3/index.html)
