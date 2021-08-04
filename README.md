@@ -24,3 +24,10 @@
 
    - [Github](https://github.com/0224071/hexschool-web-layout-class/tree/main/app/week3)
    - [Github Pages](https://0224071.github.io/hexschool-web-layout-class/week3/index.html)
+
+## Week 4
+
+4. 第四週 - 多頁式 RWD 網站
+
+   - [Github](https://github.com/0224071/hexschool-web-layout-class/tree/main/app/week4)
+   - [Github Pages](https://0224071.github.io/hexschool-web-layout-class/week4)

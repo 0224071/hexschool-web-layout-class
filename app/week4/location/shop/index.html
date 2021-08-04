@@ -1,0 +1,51 @@
+---
+title: 門市據點
+layout: ./app/week4/layout.ejs
+engine: ejs
+rootPath: ../../
+---
+
+
+<div class="container mt-12 mt-lg-7 mt-sm-4 mb-8 mb-lg-5  mb-sm-3  line-height-s">
+    <h1 class="font-weight-bold font-size-h2 font-size-sm-h3 pl-2 border-left border-primary border-l">門市據點</h1>
+</div>
+
+<div class="container location">
+    <div class="location__county">
+        <label class="location__county__label font-size-h4 font-size-md-h6" for="location_county">選擇分店</label>
+        <select id="location_county" class="location__county__input text-gray font-size-md-h6" value="台北中山旗艦店">
+            <option value="台北中山旗艦店">台北中山旗艦店</option>
+            <option value="台北中山旗艦店">台北中山旗艦店</option>
+        </select>
+    </div>
+    <ul class="location__list row flex-wrap">
+        <li class="location__list__item d-none d-lg-inline-block d-sm-none col-12 col-lg-6"> <img
+                src="../../assets/images/locate1.jpeg" alt="location" class="h-100"></li>
+        <li class="location__list__item col-4 col-lg-6 col-sm-12">
+            <div class="border border-gray-light h-100">
+                <img class="d-lg-none d-sm-inline-block" src="../../assets/images/locate1.jpeg" alt="location">
+                <h2 class="location__list__name font-size-h4 font-size-md-h6 border-bottom border-gray-light">台北中山旗艦店
+                </h2>
+                <ul class="location__list__info font-size-md-s">
+                    <li class="mb-1 tel-icon">
+                        <span>
+                            電話：(02)000-1234
+                        </span>
+                    </li>
+                    <li class="mb-1 time-icon">
+                        <span>營業時間：10:00-21:00</span>
+                    </li>
+                    <li class="address-icon">
+                        <span>地址：台北市中山區南京東路25巷2-1號</span>
+                    </li>
+                </ul>
+
+            </div>
+        </li>
+        <li class="location__list__item col-8 col-lg-12">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14457.751978952536!2d121.5202316!3d25.0531398!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4adcb4498539709f!2sMooi%20hair%20salon%202%E9%A4%A8!5e0!3m2!1szh-TW!2stw!4v1628067298352!5m2!1szh-TW!2stw"
+                class="location__list__map w-100 h-100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </li>
+    </ul>
+</div>

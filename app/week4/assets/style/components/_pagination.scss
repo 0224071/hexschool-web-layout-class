@@ -1,0 +1,17 @@
+.pagination {
+  border: 1px solid #555555;
+  margin: 0 auto;
+  &__item {
+    border-right: 1px solid #555555;
+    &:last-child {
+      border: none;
+    }
+  }
+  &__link {
+    padding: 12px 16px;
+    &--active {
+      background: $black;
+      color: $white;
+    }
+  }
+}

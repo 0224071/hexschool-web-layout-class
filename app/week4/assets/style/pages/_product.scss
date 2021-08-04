@@ -1,0 +1,183 @@
+.productNav {
+  &__link {
+    padding: 26px 59px;
+    @include desktop {
+      padding: 15px 21px;
+    }
+    @include mobile {
+      padding: 10px 20px;
+    }
+    position: relative;
+    height: 100%;
+    &--active {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 8px;
+        bottom: 0;
+        left: 0;
+        background-color: $primary;
+        @include mobile {
+          height: 4px;
+        }
+      }
+    }
+    &:hover {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 8px;
+        bottom: 0;
+        left: 0;
+        background-color: $primary;
+        @include mobile {
+          height: 4px;
+        }
+      }
+    }
+  }
+  &__icon {
+    width: 44px;
+    @include desktop {
+      width: 36px;
+    }
+    @include mobile {
+      width: 15px;
+    }
+  }
+}
+
+.productBanner {
+  &__img {
+    height: 304px;
+    @include mobile {
+      height: 148px;
+    }
+    &--img01 {
+      @include bg-image-center("../images/banner-1.jpg");
+    }
+    &--img02 {
+      @include bg-image-center("../images/banner-2.jpg");
+    }
+    &--img03 {
+      @include bg-image-center("../images/banner-3.jpg");
+    }
+    &--img04 {
+      @include bg-image-center("../images/banner-4.jpg");
+      background-position: 100% 25%;
+    }
+  }
+}
+
+.product {
+  padding-top: 80px;
+  padding-bottom: 171px;
+  @include pad {
+    padding-top: 56px;
+    padding-bottom: 96px;
+  }
+  @include mobile {
+    padding-top: 32px;
+    padding-bottom: 68px;
+  }
+  &__title {
+    font-size: 42px;
+    @include mobile {
+      font-size: $h5-font-size;
+    }
+  }
+  &__list {
+    &__item {
+      margin-bottom: 104px;
+      @include desktop {
+        margin-bottom: 72px;
+      }
+      @include mobile {
+        margin-bottom: 32px;
+      }
+    }
+  }
+  &__colorList {
+    &__item {
+      width: 24px;
+      height: 24px;
+      @include mobile {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+
+.diamond-icon {
+  padding-left: 54px;
+
+  @include prepend-icon("../images/icon-diamond-black.svg") {
+    background-size: 44px;
+    background-position-y: 6px;
+  }
+
+  @include desktop {
+    padding-left: 39px;
+    @include prepend-icon("../images/icon-diamond-black.svg") {
+      background-size: 33px;
+      background-position-y: 11px;
+    }
+  }
+  @include mobile {
+    padding-left: 17px;
+    @include prepend-icon("../images/icon-diamond-black.svg") {
+      background-size: 15px;
+      background-position-y: 5px;
+    }
+  }
+}
+.sun-icon {
+  padding-left: 54px;
+
+  @include prepend-icon("../images/icon-sun-black.svg") {
+    background-size: 44px;
+    background-position-y: 3px;
+  }
+  @include desktop {
+    padding-left: 39px;
+    @include prepend-icon("../images/icon-sun-black.svg") {
+      background-size: 33px;
+    }
+  }
+  @include mobile {
+    padding-left: 17px;
+    @include prepend-icon("../images/icon-sun-black.svg") {
+      background-size: 15px;
+      background-position-y: 3px;
+    }
+  }
+}
+
+.thunder-icon {
+  padding-left: 54px;
+
+  @include prepend-icon("../images/icon-thunder-black.svg") {
+    background-size: 30px;
+    background-position-x: 8px;
+    background-position-y: 3px;
+  }
+  @include desktop {
+    padding-left: 39px;
+    @include prepend-icon("../images/icon-thunder-black.svg") {
+      background-size: 22px;
+      background-position-y: 3px;
+    }
+  }
+  @include mobile {
+    padding-left: 17px;
+    @include prepend-icon("../images/icon-thunder-black.svg") {
+      background-size: 10px;
+      background-position-x: 3px;
+      background-position-y: 3px;
+    }
+  }
+}

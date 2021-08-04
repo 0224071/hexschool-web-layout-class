@@ -1,0 +1,9 @@
+.faq {
+  margin-bottom: 160px;
+  @include pad {
+    margin-bottom: 96px;
+  }
+  @include mobile {
+    margin-bottom: 56px;
+  }
+}

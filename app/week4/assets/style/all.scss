@@ -1,8 +1,16 @@
-@import "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap";
-@import "reset";
-@import "variables";
-@import "mixins";
-@import "base";
-@import "layout";
-@import "utilities";
-@import "pages/index"
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap"; //font
+@import "reset"; //meyerweb reset
+@import "variables"; //color font breakpoints variables
+@import "mixins"; //rwd
+@import "base"; //全域設定
+@import "layout"; //grid header footer
+@import "utilities"; // 工具類全放這
+
+//元件
+@import "components/pagination"; //元件
+
+@import "pages/index"; //首頁
+@import "pages/product"; //產品
+@import "pages/location"; //據點
+@import "pages/faq"; //問答
+@import "pages/blog"; //部落格

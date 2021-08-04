@@ -1,0 +1,108 @@
+.location {
+  margin-bottom: 160px;
+  @include pad {
+    margin-bottom: 96px;
+  }
+  @include mobile {
+    margin-bottom: 56px;
+  }
+  &__county {
+    margin-bottom: 37px;
+    &__label {
+      margin-right: 20px;
+    }
+    &__input {
+      width: 324px;
+      padding: 8px 19px;
+    }
+  }
+  &__list {
+    &__item {
+      margin-bottom: 32px;
+      @include pad {
+        margin-bottom: 20px;
+      }
+      @include mobile {
+        margin-bottom: 16px;
+      }
+    }
+    &__name {
+      padding: 12px 24px;
+    }
+    &__info {
+      padding: 16px 27px;
+    }
+    &__icon {
+      width: 16px;
+    }
+    &__btn {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      @include pad {
+        padding-top: 16px;
+        padding-bottom: 16px;
+      }
+      cursor: pointer;
+    }
+    &__map{
+      @include desktop{
+        min-height: 422px;
+      }
+      @include mobile{
+        min-height: 211px;
+      }
+    }
+  }
+}
+.tel-icon {
+  padding-left: 32px;
+
+  @include prepend-icon("../images/icon-phone-black.svg") {
+    background-size: 22px;
+    background-position-y: 3px;
+  }
+  @include pad {
+    padding-left: 26px;
+    @include prepend-icon("../images/icon-phone-black.svg") {
+      background-size: 16px;
+      background-position-y: 4px;
+    }
+  }
+}
+.time-icon {
+  padding-left: 32px;
+  @include mobile {
+    padding-left: 28px;
+  }
+  @include prepend-icon("../images/icon-clock-black.svg") {
+    background-size: 18px;
+    background-position-y: 3px;
+  }
+  @include pad {
+    padding-left: 26px;
+    @include prepend-icon("../images/icon-clock-black.svg") {
+      background-size: 14px;
+      background-position-y: 3px;
+    }
+  }
+}
+
+.address-icon {
+  padding-left: 32px;
+  @include mobile {
+    padding-left: 28px;
+  }
+  @include prepend-icon("../images/icon-map.svg") {
+    background-size: 13px;
+    background-position-x: 3px;
+    background-position-y: 3px;
+  }
+  @include pad {
+    padding-left: 26px;
+    @include prepend-icon("../images/icon-map.svg") {
+      background-size: 12px;
+      background-position-x: 1px;
+      background-position-y: 2px;
+    }
+  }
+}

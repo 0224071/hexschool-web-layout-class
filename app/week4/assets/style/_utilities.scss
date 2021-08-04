@@ -7,12 +7,12 @@
   @include make-padding-space($key, $size);
 }
 //margin, m-*,mt-*,mb-*,ml-*,mr-*,mx-*,my-*
-@for $i from 0 through 6 {
+@for $i from 0 through 12 {
   @include make-margin-space($i, $i * $space);
 }
 
 @each $infix, $max-width in $grid-breakpoints-infix {
-  @for $i from 0 through 6 {
+  @for $i from 0 through 12 {
     @media (max-width: $max-width) {
       @include make-margin-space(#{$infix + "-" + $i}, $i * $space);
     }
@@ -20,17 +20,44 @@
 }
 
 //padding, p-*,pt-*,pb-*,pl-*,pr-*,px-*,py-*
-@for $i from 0 through 6 {
+@for $i from 0 through 12 {
   @include make-padding-space($i, $i * $space);
 }
 @each $infix, $max-width in $grid-breakpoints-infix {
-  @for $i from 0 through 6 {
+  @for $i from 0 through 12 {
     @media (max-width: $max-width) {
       @include make-padding-space(#{$infix + "-" + $i}, $i * $space);
     }
   }
 }
 
+//border
+.border {
+  border: 1px solid $white;
+}
+.border-top {
+  border-top: 1px solid $white;
+}
+.border-bottom {
+  border-bottom: 1px solid $white;
+}
+
+.border-left {
+  border-left: 1px solid $white;
+}
+
+.border-right {
+  border-right: 1px solid $white;
+}
+.border-none {
+  border: none;
+}
+.border-radius {
+  border-radius: 4px;
+}
+.border-l {
+  border-width: 8px;
+}
 //color, bg-*,text-*,border-*
 @include make-theme-colors($theme-colors);
 //font-weight, font-weight-*
@@ -52,13 +79,43 @@
     height: $value;
   }
 }
+
 .d-flex {
   display: flex;
 }
 .d-block {
   display: block;
 }
+
+.d-inline-block {
+  display: inline-block;
+}
+.d-none {
+  display: none;
+}
+@include desktop {
+  .d-lg-inline-block {
+    display: inline-block;
+  }
+  .d-lg-inline {
+    display: inline;
+  }
+  .d-lg-none {
+    display: none;
+  }
+}
+@include pad {
+  .d-md-none {
+    display: none;
+  }
+}
 @include mobile {
+  .d-sm-block {
+    display: block;
+  }
+  .d-sm-inline-block {
+    display: inline-block;
+  }
   .d-sm-none {
     display: none;
   }
@@ -130,6 +187,9 @@
 .text-uppercase {
   text-transform: uppercase;
 }
+.object-cover{
+  object-fit: cover
+}
 
 .brightness-effect {
   @include image-filter(#ffffff, 0.5);
@@ -143,9 +203,24 @@
     @include position-center;
   }
 }
-.border {
-  border: 1px solid $white;
+
+.line-height-s {
+  line-height: $line-height-s;
 }
-.border-top {
-  border-top: 1px solid $white;
+
+//font
+
+@each $key, $size in $font-sizes {
+  .font-size-#{$key} {
+    font-size: $size;
+  }
+}
+@each $infix, $max-width in $grid-breakpoints-infix {
+  @media (max-width: $max-width) {
+    @each $key, $size in $font-sizes {
+      .font-size-#{$infix}-#{$key} {
+        font-size: $size;
+      }
+    }
+  }
 }

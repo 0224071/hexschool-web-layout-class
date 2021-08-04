@@ -45,13 +45,14 @@ $custom-padding-space: (
   "60": 60px,
   "80": 80px,
   "88": 88px,
+  "96": 96px,
 );
 //Font
 $font-size-base: 1rem; //browser default:16px
 $font-size-s: $font-size-base * 0.875; //14px
 $font-size-m: $font-size-base * 2; //32px
 $font-size-l: $font-size-base * 2.25; //36px
-$font-size-2l: $font-size-base * 4; //72px
+$font-size-2l: $font-size-base * 4.5; //72px
 
 $h1-font-size: $font-size-base * 4; //64px
 $h2-font-size: $font-size-base * 3; //48px
@@ -75,8 +76,8 @@ $font-sizes: (
 );
 
 $line-height-base: 1.5;
-$line-height-sm: 1.25;
-$line-height-lg: 2;
+$line-height-s: 1.33;
+$line-height-l: 2;
 
 $font-weight-base: 400;
 $font-weight-medium: 500;
@@ -97,6 +98,7 @@ $font-family-base: $font-family-roboto, $font-family-noto, sans-serif;
 //Color
 //gray-color-variables
 $white: #ffffff;
+$gray-100: #dcdcdc;
 $gray-400: #707070;
 $gray-700: #212529;
 $black: #000000;
@@ -110,11 +112,15 @@ $grays: (
 $pink: #aa06010d;
 $red: #aa0601;
 $red-dark: #650300;
+$coffee: #5f3e2d;
+$coffee-light: #b75929;
 
 $colors: (
   "pink": $pink,
   "red": #aa0601,
   "red-dark": $red-dark,
+  "coffee": $coffee,
+  "coffee-light": $coffee-light,
   "gray": $gray-400,
   "gray-dark": $gray-700,
   "white": $white,
@@ -132,8 +138,12 @@ $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
   "success": $success,
+  "info": $coffee,
+  "warning": $coffee-light,
   "light": $light,
   "dark": $dark,
+  "gray-light": $gray-100,
   "gray": $gray-400,
   "gray-dark": $gray-700,
 );
+
