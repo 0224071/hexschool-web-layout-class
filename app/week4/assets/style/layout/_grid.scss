@@ -1,0 +1,103 @@
+.container {
+  max-width: 1110px;
+  padding: 0 $gutter-width/2;
+  margin: 0 auto;
+
+  @include desktop {
+    max-width: 690px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: (0 - $gutter-width / 2);
+  margin-right: (0 - $gutter-width / 2);
+}
+
+%no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.no-gutter {
+  margin: 0;
+  padding: 0;
+  .col-auto {
+    @extend %no-gutter;
+  }
+
+  @each $infix, $value in $grid-breakpoints-infix {
+    @for $i from 1 through $grid-num {
+      .col-#{$infix}-auto {
+        @extend %no-gutter;
+      }
+    }
+  }
+
+  @for $i from 1 through $grid-num {
+    .col-#{$i} {
+      @extend %no-gutter;
+    }
+  }
+
+  @each $infix, $value in $grid-breakpoints-infix {
+    @for $i from 1 through $grid-num {
+      .col-#{$infix}-#{$i} {
+        @extend %no-gutter;
+      }
+    }
+  }
+}
+%col {
+  padding: 0 ($gutter-width / 2);
+  width: 100%;
+}
+
+@for $i from 1 through $grid-num {
+  .col-#{$i} {
+    @extend %col;
+    max-width: 100% * ($i / $grid-num);
+    flex: 0 0 (100% * ($i / $grid-num));
+  }
+}
+.col-auto {
+  @extend %col;
+  flex: 0 0 auto;
+  max-width: auto;
+  width: auto;
+}
+@each $infix, $value in $grid-breakpoints-infix {
+  @media (max-width: $value) {
+    @for $i from 1 through $grid-num {
+      .col-#{$infix}-#{$i} {
+        max-width: 100% * ($i / $grid-num);
+        flex: 0 0 (100% * ($i / $grid-num));
+      }
+    }
+  }
+}
+
+@each $infix, $value in $grid-breakpoints-infix {
+  @media (max-width: $value) {
+    .col-#{$infix}-auto {
+      flex: 0 0 auto;
+      max-width: auto;
+      width: auto;
+    }
+  }
+}
+
+@include mobile {
+  .order-sm-1 {
+    order: 1;
+  }
+  .order-sm-2 {
+    order: 2;
+  }
+  .order-sm-3 {
+    order: 3;
+  }
+}

@@ -1,0 +1,117 @@
+@mixin desktop {
+  @media (max-width: $max-width-desktop) {
+    @content;
+  }
+}
+@mixin pad {
+  @media (max-width: $max-width-pad) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: $max-width-mobile) {
+    @content;
+  }
+}
+@mixin phone {
+  @media (max-width: $max-width-phone) {
+    @content;
+  }
+}
+@mixin make-margin-space($key, $size) {
+  .ml-#{$key} {
+    margin-left: $size;
+  }
+  .mr-#{$key} {
+    margin-right: $size;
+  }
+  .mt-#{$key} {
+    margin-top: $size;
+  }
+  .mb-#{$key} {
+    margin-bottom: $size;
+  }
+  .mx-#{$key} {
+    margin-right: $size;
+    margin-left: $size;
+  }
+  .my-#{$key} {
+    margin-top: $size;
+    margin-bottom: $size;
+  }
+  .m-#{$key} {
+    margin: $size;
+  }
+}
+@mixin make-padding-space($key, $size) {
+  .pl-#{$key} {
+    padding-left: $size;
+  }
+  .pr-#{$key} {
+    padding-right: $size;
+  }
+  .pt-#{$key} {
+    padding-top: $size;
+  }
+  .pb-#{$key} {
+    padding-bottom: $size;
+  }
+  .px-#{$key} {
+    padding-right: $size;
+    padding-left: $size;
+  }
+  .py-#{$key} {
+    padding-top: $size;
+    padding-bottom: $size;
+  }
+  .p-#{$key} {
+    padding: $size;
+  }
+}
+
+@mixin make-font-weights($font-weights) {
+  @each $name, $weight in $font-weights {
+    .font-weight-#{$name} {
+      font-weight: $weight;
+    }
+  }
+}
+@mixin make-theme-colors($theme-colors) {
+  @each $name, $color in $theme-colors {
+    .text-#{$name} {
+      color: $color;
+    }
+    .bg-#{$name} {
+      background-color: $color;
+    }
+    .border-#{$name} {
+      border-color: $color;
+    }
+  }
+}
+
+@mixin bg-image-center($img-url) {
+  background-image: url($img-url);
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin image-filter($color, $opacity) {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $color;
+    opacity: $opacity;
+    width: 100%;
+    height: 100%;
+  }
+}
+@mixin position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
