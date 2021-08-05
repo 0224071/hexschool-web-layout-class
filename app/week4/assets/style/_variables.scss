@@ -77,7 +77,8 @@ $font-sizes: (
 
 $line-height-base: 1.5;
 $line-height-s: 1.33;
-$line-height-l: 2;
+$line-height-l: 1.71;
+$line-height-xl: 2.25;
 
 $font-weight-base: 400;
 $font-weight-medium: 500;
@@ -99,8 +100,10 @@ $font-family-base: $font-family-roboto, $font-family-noto, sans-serif;
 //gray-color-variables
 $white: #ffffff;
 $gray-100: #dcdcdc;
+
 $gray-400: #707070;
 $gray-700: #212529;
+$gray-800: #0a0a0a;
 $black: #000000;
 
 $grays: (
@@ -145,5 +148,5 @@ $theme-colors: (
   "gray-light": $gray-100,
   "gray": $gray-400,
   "gray-dark": $gray-700,
+  "gray-800": $gray-800,
 );
-

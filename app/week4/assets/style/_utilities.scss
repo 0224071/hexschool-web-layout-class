@@ -158,6 +158,9 @@
   .justify-content-sm-center {
     justify-content: center;
   }
+  .justify-content-sm-between {
+    justify-content: space-between;
+  }
   .flex-sm-column {
     flex-direction: column;
   }
@@ -187,8 +190,8 @@
 .text-uppercase {
   text-transform: uppercase;
 }
-.object-cover{
-  object-fit: cover
+.object-cover {
+  object-fit: cover;
 }
 
 .brightness-effect {
@@ -203,11 +206,26 @@
     @include position-center;
   }
 }
-
+.line-height-normal {
+  line-height: $line-height-base;
+}
 .line-height-s {
   line-height: $line-height-s;
 }
-
+.line-height-l {
+  line-height: $line-height-l;
+}
+.line-height-xl {
+  line-height: $line-height-xl;
+}
+@include mobile {
+  .line-height-sm-normal {
+    line-height: $line-height-base;
+  }
+}
+.opacity-60 {
+  opacity: 0.6;
+}
 //font
 
 @each $key, $size in $font-sizes {

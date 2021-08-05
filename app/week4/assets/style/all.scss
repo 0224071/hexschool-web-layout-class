@@ -7,7 +7,8 @@
 @import "utilities"; // 工具類全放這
 
 //元件
-@import "components/pagination"; //元件
+@import "components/pagination"; //分頁
+@import "components/breadcrumb"; //麵包屑
 
 @import "pages/index"; //首頁
 @import "pages/product"; //產品

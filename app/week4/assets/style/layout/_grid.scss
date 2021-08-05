@@ -89,17 +89,10 @@
       max-width: auto;
       width: auto;
     }
-  }
-}
-
-@include mobile {
-  .order-sm-1 {
-    order: 1;
-  }
-  .order-sm-2 {
-    order: 2;
-  }
-  .order-sm-3 {
-    order: 3;
+    @for $index from 0 through 6 {
+      .order-#{$infix}-#{$index} {
+        order:$index
+      }
+    }
   }
 }

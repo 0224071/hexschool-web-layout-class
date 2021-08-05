@@ -1,0 +1,16 @@
+.breadcrumb {
+  &__item {
+    & + & {
+      &::before {
+        content: "/";
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+    }
+  }
+  &__link {
+    &--active {
+      color: $primary;
+    }
+  }
+}

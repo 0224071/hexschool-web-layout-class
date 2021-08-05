@@ -2,7 +2,7 @@
   &__list {
     &__link {
       padding: 12px 0;
-      @include pad{
+      @include pad {
         padding: 16px 0;
       }
     }
@@ -20,5 +20,56 @@
   }
   @include mobile {
     margin-bottom: 56px;
+  }
+}
+
+.news {
+  margin-bottom: 160px;
+  @include pad {
+    margin-bottom: 96px;
+  }
+  @include mobile {
+    margin-bottom: 56px;
+  }
+  &__share{
+    &__icon{
+      @include pad{
+        width: 20px;
+      }
+      @include mobile{
+        width: 16px;
+      }
+    }
+  }
+  &__jumpPage{
+    &__icon{
+      width: 16px;
+    }
+  }
+}
+
+.tag-icon {
+  padding-left: 52px;
+
+  @include prepend-icon("../images/icon-tag.svg") {
+    background-size: 38px;
+    background-position-x: 6px;
+    background-position-y: 2px;
+  }
+  @include desktop {
+    padding-left: 30px;
+    @include prepend-icon("../images/icon-tag.svg") {
+      background-size: 24px;
+      background-position-x: 3px;
+      background-position-y: 3px;
+    }
+  }
+  @include mobile {
+    padding-left: 26px;
+    @include prepend-icon("../images/icon-tag.svg") {
+      background-size: 22px;
+      background-position-x: 3px;
+      background-position-y: 4px;
+    }
   }
 }
