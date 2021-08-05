@@ -614,7 +614,7 @@ a {
       border: 1px solid #ffffff; } }
   @media (max-width: 576px) {
     .header__nav__link {
-      padding: 8px 54px; } }
+      padding: 8px 0; } }
 
 .headerContainer {
   padding: 0 15px;
