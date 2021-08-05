@@ -12,7 +12,8 @@
       margin-right: 20px;
     }
     &__input {
-      width: 324px;
+      flex: 1 1 auto;
+
       padding: 8px 19px;
     }
   }
@@ -44,11 +45,11 @@
       }
       cursor: pointer;
     }
-    &__map{
-      @include desktop{
+    &__map {
+      @include desktop {
         min-height: 422px;
       }
-      @include mobile{
+      @include mobile {
         min-height: 211px;
       }
     }

@@ -112,6 +112,11 @@
 .text-right {
   text-align: right;
 }
+@include mobile() {
+  .text-sm-center {
+    text-align: center;
+  }
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;

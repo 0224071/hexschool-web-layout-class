@@ -9,6 +9,11 @@
   }
   &__link {
     padding: 12px 16px;
+
+    &--pre,
+    &--next {
+      padding: 12px 10px;
+    }
     &--active {
       background: $black;
       color: $white;
