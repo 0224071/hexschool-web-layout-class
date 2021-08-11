@@ -1,0 +1,37 @@
+.custom-form-check {
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 2em;
+  margin-bottom: 0.125rem;
+  .custom-form-check__input {
+    float: left;
+    margin-left: -2em;
+  }
+
+  &__input {
+    width: 1.3em;
+    height: 1.3em;
+    margin-top: 0.25em;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 2px solid rgba(0, 0, 0, 0.75);
+    appearance: none;
+    color-adjust: exact;
+
+    &[type="checkbox"] {
+      border-radius: 0.25em;
+    }
+    &:checked {
+      background-color: $success;
+      border-color: $success;
+    }
+    &:focus {
+      border-color: $success;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}

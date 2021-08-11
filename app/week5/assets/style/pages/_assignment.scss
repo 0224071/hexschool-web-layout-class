@@ -1,0 +1,10 @@
+.assignment {
+  &__list {
+    min-width: 320px;
+    &__item {
+      &--active {
+        background-color: $gray-100;
+      }
+    }
+  }
+}

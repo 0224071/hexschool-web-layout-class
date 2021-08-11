@@ -1,0 +1,33 @@
+//custom margin、padding size
+@each $key, $size in $custom-spaces {
+  @include make-margin-space($key, $size);
+  @include make-padding-space($key, $size);
+}
+//color
+@include make-theme-colors($theme-colors);
+@include make-theme-colors($grays);
+//font
+@each $key, $size in $font-sizes {
+  .font-size-#{$key} {
+    font-size: $size;
+  }
+}
+@each $infix, $max-width in $grid-breakpoints-infix {
+  @media (max-width: $max-width) {
+    @each $key, $size in $font-sizes {
+      .font-size-#{$infix}-#{$key} {
+        font-size: $size;
+      }
+    }
+  }
+}
+
+.object-cover {
+  object-fit: cover;
+}
+.opacity-1{
+  opacity: 1;
+}
+.lh-24{
+  line-height: 24px;
+}

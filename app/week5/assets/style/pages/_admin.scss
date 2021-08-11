@@ -1,0 +1,11 @@
+.info {
+  &__photo {
+    width: 141px;
+    height: 141px;
+  }
+}
+.collapsed {
+  .icon {
+    transform: rotate(180deg);
+  }
+}

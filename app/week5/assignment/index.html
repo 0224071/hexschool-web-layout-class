@@ -1,0 +1,188 @@
+---
+title: 任務
+layout: ./app/week5/layout.ejs
+engine: ejs
+current: assignment
+rootPath: ../
+---
+
+<div class="header d-flex justify-content-between mb-44">
+    <div class="d-flex">
+        <h2 class="me-5 mb-0 h4 fw-bold">Assignment</h2>
+        <div class="d-flex align-items-center fw-bold">All Courses
+            <a href="javascript:;" class="text-success ms-2">
+                <span class="material-icons-outlined align-middle">expand_more</span>
+            </a>
+        </div>
+    </div>
+    <div class="d-flex">
+        <a href="javascript:;" class="mr-26 text-gray-900"><span class="material-icons">search</span></a>
+        <a href="javascript:;" class="text-gray-900"><span class="material-icons">notifications_active</span></a>
+    </div>
+</div>
+<div class="assignment">
+    <div class="assignment__header d-flex justify-content-between mb-2">
+        <div class="d-flex align-items-center">
+            <span>All (4) </span>
+            <a data-bs-toggle="collapse" href="#collapseAssignmetList" aria-expanded="true">
+                <span class="material-icons-outlined icon align-middle">
+                    expand_less
+                </span>
+            </a>
+        </div>
+        <div class="text-muted font-size-xs d-flex align-items-center">2 comments</div>
+    </div>
+    <div class="d-flex">
+        <ul class="assignment__list list-group me-3 show" id="collapseAssignmetList">
+            <li class="assignment__list__item assignment__list__item--active list-group-item p-12" aria-disabled="true">
+                <div class="d-flex  justify-content-between">
+                    <div class="font-size-xs">Chapter Assignment 2</div>
+                    <time class="font-size-xs">4 hrs ago</time>
+
+                </div>
+                <div class="d-flex  justify-content-between">
+                    <div class="fw-bold">Please check this file…</div>
+                    <div class="text-muted font-size-xs align-self-end">Emily Wang</div>
+                </div>
+            </li>
+            <li class="assignment__list__item list-group-item p-12">
+                <div class="d-flex  justify-content-between">
+                    <div class="font-size-xs">Chapter Assignment 1</div>
+                    <time class="font-size-xs">12 hrs ago</time>
+
+                </div>
+                <div class="d-flex  justify-content-between">
+                    <div class="fw-bold">My Homework</div>
+                    <div class="text-muted font-size-xs align-self-end">David Xu</div>
+                </div>
+            </li>
+            <li class="assignment__list__item list-group-item p-12">
+                <div class="d-flex  justify-content-between">
+                    <div class="font-size-xs">Final Assignment</div>
+                    <time class="font-size-xs">18 hrs ago</time>
+
+                </div>
+                <div class="d-flex  justify-content-between">
+                    <div class="fw-bold">Have a problem with this…</div>
+                    <div class="text-muted font-size-xs align-self-end">Tony Wei</div>
+                </div>
+            </li>
+            <li class="assignment__list__item list-group-item p-12">
+                <div class="d-flex  justify-content-between">
+                    <div class="font-size-xs">Final Assignment</div>
+                    <time class="font-size-xs">19 hrs ago</time>
+
+                </div>
+                <div class="d-flex  justify-content-between">
+                    <div class="fw-bold">Did I do it right?</div>
+                    <div class="text-muted font-size-xs align-self-end">Christina Lin</div>
+                </div>
+            </li>
+
+        </ul>
+        <div class="flex-fill">
+            <div class="assignment__content card mb-3 position-relative">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <div>
+                        <div class="font-size-xs">Chapter Assignment 2 / HTML&CSS</div>
+                        <div class="fw-bold">Please check this file for me, thanks!</div>
+                    </div>
+                    <a href="javscript:;" class="text-gray-900">
+                        <span class="material-icons">more_vert</span>
+                    </a>
+
+                </div>
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="aside__photo object-cover rounded-circle me-2"
+                            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emilywang.jpeg?raw=true"
+                            alt="photo">
+                        <div>
+                            <div class="fw-bold">Emily Wang</div>
+                            <time class="text-muted  font-size-s">10:38 AM (4 hours ago)</time>
+                        </div>
+                    </div>
+                    <div class="ms-5 border-bottom">
+                        <div class="card-text font-size-s">Hi Teacher, the attached file is my homework of chapter 2.
+                            And
+                            here
+                            comes a
+                            question: Why in the following code the height of the div is bigger than the height of the
+                            img ?
+                            There is a gap below the image, but it doesn’t seems to be a padding/margin.
+                            <br> What is the gap or extra space below image?</div>
+                        <a href="./index.html"
+                            class="btn btn-light fw-bold d-inline-flex align-items-center border my-3"
+                            download="HW-2-David.zip"><span
+                                class="material-icons me-2">attach_file</span>HW-2-David.zip</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="d-flex align-items-center">
+                            <img class="aside__photo object-cover rounded-circle me-2"
+                                src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true"
+                                alt="photo">
+                            <div>
+                                <div class="fw-bold">Andy Chen (You)</div>
+                                <time class="text-muted  font-size-s">13:24 AM (1 hours ago)</time>
+                            </div>
+                        </div>
+                        <div class="align-self-baseline">
+                            <a href="javascript:;" class="me-4 text-gray-900">
+                                <span class="material-icons-outlined ">
+                                    grade
+                                </span>
+                            </a>
+
+                            <a href="javascript:;" class="text-gray-900">
+                                <span class="material-icons">
+                                    edit
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ms-5">
+                        <div class="card-text font-size-s">Hi David, by default, an image is rendered inline, like a
+                            letter
+                            so it sits on the same line that a, b, c and d sit on. There is space below that line for
+                            the
+                            descenders you find on letters like g, j, p and q.
+                            <br><br> You can:
+                            <br><br>• adjust the <span class="bg-light text-success">vertical-align</span> of the
+                            image to position it elsewhere (e.g. the <span class="bg-light text-success">middle</span> )
+                            or 　
+                            <br>• change the <span class="bg-light text-success">display</span> so it isn’t inline.
+                        </div>
+                    </div>
+                </div>
+                <div id="ckeditor" class="editor" data-bs-backdrop="false">
+                    <div id="editor" class="editor">Reply an answer…</div>
+                    <div class="editor__btn text-end">
+                        <button class="btn btn-outline-success fw-bold me-3" data-bs-toggle="offcanvas"
+                            data-bs-target="#ckeditor">Cancel</button>
+                        <button class="btn btn-success fw-bold me-4" aria-controls="ckeditor">Reply</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                    <a href="javascript:;" class="text-gray-900">
+                        <span class="material-icons-outlined me-4">chevron_left</span>
+                    </a>
+                    <a href="javascript:;" class="text-gray-900">
+                        <span class="material-icons-outlined">chevron_right</span>
+                    </a>
+                </div>
+                <div>
+                    <button class="btn btn-outline-success fw-bold me-3">Mark as read</button>
+                    <button class="btn btn-success fw-bold" data-bs-toggle="offcanvas" data-bs-target="#ckeditor"
+                        aria-controls="ckeditor">Reply</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

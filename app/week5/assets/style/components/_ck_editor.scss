@@ -1,0 +1,16 @@
+.editor {
+  position: absolute;
+  left: -1px;
+  bottom: -60px;
+  width: calc(100% + 2px);
+  visibility: hidden;
+  &__btn {
+    position: absolute;
+    left: 0;
+    bottom: 16px;
+    width: 100%;
+  }
+}
+.ck-editor__editable_inline {
+  min-height: 319px;
+}

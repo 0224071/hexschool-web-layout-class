@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+  color:$gray-900;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+  &:hover{
+    color:$success;
+  }
+  &:active{
+    color:$success;
+  }
+  &:focus{
+    color:$success;
+  }
+}

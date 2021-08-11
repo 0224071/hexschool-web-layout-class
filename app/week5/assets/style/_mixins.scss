@@ -1,0 +1,87 @@
+@mixin make-margin-space($key, $size) {
+  .ml-#{$key} {
+    margin-left: $size;
+  }
+  .mr-#{$key} {
+    margin-right: $size;
+  }
+  .mt-#{$key} {
+    margin-top: $size;
+  }
+  .mb-#{$key} {
+    margin-bottom: $size;
+  }
+  .mx-#{$key} {
+    margin-right: $size;
+    margin-left: $size;
+  }
+  .my-#{$key} {
+    margin-top: $size;
+    margin-bottom: $size;
+  }
+  .m-#{$key} {
+    margin: $size;
+  }
+}
+@mixin make-padding-space($key, $size) {
+  .pl-#{$key} {
+    padding-left: $size;
+  }
+  .pr-#{$key} {
+    padding-right: $size;
+  }
+  .pt-#{$key} {
+    padding-top: $size;
+  }
+  .pb-#{$key} {
+    padding-bottom: $size;
+  }
+  .px-#{$key} {
+    padding-right: $size;
+    padding-left: $size;
+  }
+  .py-#{$key} {
+    padding-top: $size;
+    padding-bottom: $size;
+  }
+  .p-#{$key} {
+    padding: $size;
+  }
+}
+
+@mixin make-theme-colors($theme-colors) {
+  @each $name, $color in $theme-colors {
+    .text-#{$name} {
+      color: $color;
+    }
+    .bg-#{$name} {
+      background-color: $color;
+    }
+    .border-#{$name} {
+      border-color: $color;
+    }
+    @each $infix, $max-width in $grid-breakpoints-infix {
+      @media (max-width: $max-width) {
+        .text-#{$infix}-#{$name} {
+          color: $color;
+        }
+        .bg-#{$infix}-#{$name} {
+          background-color: $color;
+        }
+        .border-#{$infix}-#{$name} {
+          border-color: $color;
+        }
+      }
+    }
+    .text-#{$name}--hover {
+      &:hover {
+        color: $color;
+      }
+    }
+    .bg-#{$name}--hover {
+      &:hover {
+        background-color: $color;
+      }
+    }
+  }
+}

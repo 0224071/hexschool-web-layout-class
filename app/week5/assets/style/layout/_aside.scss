@@ -1,0 +1,25 @@
+.aside {
+  min-width: 296px;
+  min-height: 100vh;
+  &__nav {
+    &__link {
+      transition: 0.3s;
+      border-left: 4px solid $gray-100;
+      &:focus {
+        color: $success;
+      }
+      &:hover {
+        color: $success;
+        border-left: 4px solid $success;
+      }
+      &--active {
+        color: $success;
+        border-left: 4px solid $success;
+      }
+    }
+  }
+  &__photo {
+    width: 40px;
+    height: 40px;
+  }
+}

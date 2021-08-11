@@ -137,7 +137,12 @@ function watch() {
       gulp.series(layoutHTML)
     );
   });
-
+  folders.forEach((folder) => {
+    gulp.watch(
+      getMultiPageSrcPath(envOptions.html.ejsSrc, folder),
+      gulp.series(layoutHTML)
+    );
+  });
   folders.forEach((name) => {
     gulp.watch(
       getMultiPageSrcPath(envOptions.javascript.src, name),

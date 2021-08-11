@@ -1,0 +1,125 @@
+//Layout
+$widths: (
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto,
+);
+$heights: (
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto,
+);
+$max-width-desktop: 992px;
+$max-width-pad: 768px;
+$max-width-mobile: 576px;
+$max-width-phone: 375px;
+
+$grid-breakpoints: (
+  desktop: $max-width-desktop,
+  pad: $max-width-pad,
+  mobile: $max-width-mobile,
+  phone: $max-width-phone,
+);
+
+$grid-breakpoints-infix: (
+  lg: $max-width-desktop,
+  md: $max-width-pad,
+  sm: $max-width-mobile,
+  xs: $max-width-phone,
+);
+$gutter-width: 30px;
+$grid-num: 12;
+//Space
+$space: 8px;
+$custom-spaces: (
+  "12": 12px,
+  "13": 13px,
+  "20": 20px,
+  "26": 26px,
+  "28": 28px,
+  "32": 32px,
+  "40": 40px,
+  "44": 44px,
+  "64": 64px,
+);
+
+//Font
+$font-size-base: 1rem; //browser default:16px
+$font-size-xs: $font-size-base * 0.75; //14px
+$font-size-s: $font-size-base * 0.875; //14px
+$font-size-m: $font-size-base * 2; //32px
+$font-size-l: $font-size-base * 2.25; //36px
+$font-size-2l: $font-size-base * 4.5; //72px
+
+$h1-font-size: $font-size-base * 4; //64px
+$h2-font-size: $font-size-base * 3; //48px
+$h3-font-size: $font-size-base * 1.75; //28px
+$h4-font-size: $font-size-base * 1.5; //24px
+$h5-font-size: $font-size-base * 1.25; //20px
+$h6-font-size: $font-size-base;
+
+$font-sizes: (
+  "h1": $h1-font-size,
+  "h2": $h2-font-size,
+  "h3": $h3-font-size,
+  "h4": $h4-font-size,
+  "h5": $h5-font-size,
+  "h6": $h6-font-size,
+  "2l": $font-size-2l,
+  "l": $font-size-l,
+  "m": $font-size-m,
+  "s": $font-size-s,
+  "xs": $font-size-xs,
+  "base": $font-size-base,
+);
+
+$line-height-base: 1.5;
+$line-height-s: 1.33;
+$line-height-l: 1.71;
+$line-height-xl: 2.25;
+
+$font-weight-base: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+$font-weights: (
+  "base": $font-weight-base,
+  "medium": $font-weight-medium,
+  "bold": $font-weight-bold,
+  "black": $font-weight-black,
+);
+
+$font-family-lato: "Lato";
+$font-family-roboto-mono: "Roboto Mono";
+$font-family-base: $font-family-lato, $font-family-roboto-mono, sans-serif;
+
+//Color
+//gray-color-variables
+$white: #ffffff;
+$gray-100: #f8f9fa;
+$gray-400: #707070;
+$gray-600: #6c757d;
+$gray-900: #212529;
+$black: #000000;
+
+$grays: (
+  "gray-100": $gray-100,
+  "gray-400": $gray-400,
+  "gray-600": $gray-600,
+  "gray-900": $gray-900,
+);
+
+//color-variables
+$green: #198754;
+
+//theme-color-variables
+$success: $green;
+
+$theme-colors: (
+  "success": $success,
+);
