@@ -1,0 +1,34 @@
+.timeline {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: $secondary;
+  }
+  &__pointer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      transform: translate(-50%, -25%);
+      border: 1px solid $secondary;
+      background-color: $white;
+    }
+    &--active {
+      &::before {
+        background-color: $secondary;
+      }
+    }
+  }
+}

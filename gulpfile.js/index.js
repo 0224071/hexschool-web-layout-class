@@ -32,8 +32,6 @@ function copyFile() {
 
 function layoutHTML() {
   let tasks = folders.map((folder) => {
-    console.log(getMultiPageSrcPath(envOptions.html.src, folder));
-    console.log(getMultiPageDistPath(envOptions.html.path, folder));
     return gulp
       .src(getMultiPageSrcPath(envOptions.html.src, folder))
       .pipe($.plumber())
@@ -53,14 +51,37 @@ function layoutHTML() {
   return merge(tasks);
 }
 
+function compileBootstrap() {
+  let tasks = folders.map((folder) => {
+    return gulp
+      .src(getMultiPageSrcPath(envOptions.style.bsSrc, folder), {
+        allowEmpty: true,
+      })
+      .pipe($.sass().on("error", $.sass.logError))
+      .pipe(gulp.dest(getMultiPageDistPath(envOptions.style.path, folder)))
+      .pipe(
+        browserSync.reload({
+          stream: true,
+        })
+      );
+  });
+  return merge(tasks);
+}
+
 function sass() {
   const plugins = [autoprefixer()];
 
   let tasks = folders.map((folder) => {
+    console.log(getMultiPageSrcPath(envOptions.style.src, folder));
     return gulp
       .src(getMultiPageSrcPath(envOptions.style.src, folder))
       .pipe($.sourcemaps.init())
-      .pipe($.sass().on("error", $.sass.logError))
+      .pipe(
+        $.sass({ outputStyle: envOptions.style.outputStyle }).on(
+          "error",
+          $.sass.logError
+        )
+      )
       .pipe($.postcss(plugins))
       .pipe($.sourcemaps.write("."))
       .pipe(gulp.dest(getMultiPageDistPath(envOptions.style.path, folder)))
@@ -161,6 +182,12 @@ function watch() {
       gulp.series(sass)
     );
   });
+  folders.forEach((name) => {
+    gulp.watch(
+      getMultiPageSrcPath(envOptions.watchStyle.src, name),
+      gulp.series(compileBootstrap)
+    );
+  });
 }
 
 exports.deploy = deploy;
@@ -171,15 +198,17 @@ exports.build = gulp.series(
   clean,
   copyFile,
   layoutHTML,
+  compileBootstrap,
   sass,
   babel,
   vendorsJs
 );
-
+exports.bs = gulp.series(compileBootstrap);
 exports.default = gulp.series(
   clean,
   copyFile,
   layoutHTML,
+  compileBootstrap,
   sass,
   babel,
   vendorsJs,

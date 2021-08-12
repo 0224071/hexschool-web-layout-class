@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小組討論Q2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        .grid-column {
+            background-color: rgba(86, 61, 124, .15);
+            border: 1px solid rgba(86, 61, 124, .2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container pt-3">
+        <h1 class="fw-bold">Bootstrap grid examples</h1>
+        <p class="fw-light">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
+        <p>
+            In these examples the <code>.themed-grid-col</code> class is added to the columns to add
+            some theming. This is not a class
+            that is available in Bootstrap by default.
+        </p>
+
+        <h2 class="fw-bold">Five grid tiers</h2>
+        <p>
+            There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier
+            starts at
+            a
+            minimum viewport size and automatically applies to the larger devices unless overridden.
+        </p>
+        <div class="row mb-3">
+            <div class="col-4  grid-column py-3">.col-4</div>
+            <div class="col-4  grid-column py-3">.col-4</div>
+            <div class="col-4  grid-column py-3">.col-4</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-4  grid-column py-3">.col-sm-4</div>
+            <div class="col-sm-4  grid-column py-3">.col-sm-4</div>
+            <div class="col-sm-4  grid-column py-3">.col-sm-4</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-4  grid-column py-3">.col-md-4</div>
+            <div class="col-md-4  grid-column py-3">.col-md-4</div>
+            <div class="col-md-4  grid-column py-3">.col-md-4</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-lg-4  grid-column py-3">.col-lg-4</div>
+            <div class="col-lg-4  grid-column py-3">.col-lg-4</div>
+            <div class="col-lg-4  grid-column py-3">.col-lg-4</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-4  grid-column py-3">.col-xl-4</div>
+            <div class="col-xl-4  grid-column py-3">.col-xl-4</div>
+            <div class="col-xl-4  grid-column py-3">.col-xl-4</div>
+        </div>
+        <h2>Three equal columns</h2>
+        <p>
+            Get three equal-width columns <strong>starting at desktops and scaling to large
+                desktops.</strong> On mobile devices, tablets and
+            below, the columns will automatically stack.
+        </p>
+        <div class="row mb-3">
+            <div class="col-md-4  grid-column py-3">.col-md-4</div>
+            <div class="col-md-4  grid-column py-3">.col-md-4</div>
+            <div class="col-md-4  grid-column py-3">.col-md-4</div>
+        </div>
+        <h2>Three unequal columns</h2>
+        <p>
+            Get three columns <strong>starting at desktops and scaling to large desktops</strong> of various widths.
+            Remember, grid columns
+            should add up to twelve for a single horizontal block. More than that, and columns start stacking no matter
+            the
+            viewport.
+        </p>
+        <div class="row mb-3">
+            <div class="col-md-3  grid-column py-3">.col-md-3</div>
+            <div class="col-md-6  grid-column py-3">.col-md-6</div>
+            <div class="col-md-3  grid-column py-3">.col-md-3</div>
+        </div>
+        <h2>Two columns</h2>
+        <p>Get two columns <strong>starting at desktops and scaling to large desktops.</strong></p>
+        <div class="row mb-3">
+            <div class="col-md-8  grid-column py-3">.col-md-8</div>
+            <div class="col-md-4  grid-column py-3">.col-md-4</div>
+
+        </div>
+        <h2>Full width, single column</h2>
+        <p class="text-warning">No grid classes are necessary for full-width elements.</p>
+        <hr class="my-3">
+        <h2>Two columns with two nested columns</h2>
+        <p>
+            Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you
+            two columns <strong>starting at desktops and scaling to large desktops</strong>, with another two (equal
+            widths) within the larger
+            column.
+            <br>
+            <br>
+            At mobile device sizes, tablets and down, these columns and their nested columns will stack.
+        </p>
+        <div class="row mb-3">
+            <div class="col-md-8 py-3  grid-column">
+                <p>.col-md-8</p>
+                <div class="row">
+                    <div class="col-md-6 py-3  grid-column">.col-md-6</div>
+                    <div class="col-md-6 py-3  grid-column">.col-md-6</div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3  grid-column">
+                .col-md-4
+            </div>
+        </div>
+
+        <h2>Mixed: mobile and desktop</h2>
+        <p>
+            The Bootstrap v4 grid system has five tiers of classes: xs (extra small), sm (small), md (medium), lg
+            (large),
+            and xl (extra large). You can use nearly any combination of these classes to create more dynamic and
+            flexible
+            layouts.
+            <br>
+            <br>
+            Each tier of classes scales up, meaning if you plan on setting the same widths for xs and sm, you only need
+            to
+            specify xs.
+        </p>
+        <div class="row mb-3">
+            <div class="col-12 col-md-8 py-3  grid-column">.col-12 .col-md-8</div>
+            <div class="col-6 col-md-4 py-3  grid-column"> .col-6 .col-md-4</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-6 col-md-4 py-3  grid-column">.col-6 .col-md-4</div>
+            <div class="col-6 col-md-4 py-3  grid-column">.col-6 .col-md-4</div>
+            <div class="col-6 col-md-4 py-3  grid-column">.col-6 .col-md-4</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-6 py-3  grid-column">.col-6</div>
+            <div class="col-6 py-3  grid-column">.col-6</div>
+        </div>
+
+        <h2>Mixed: mobile, tablet, and desktop</h2>
+        <div class="row mb-3">
+            <div class="col-12 col-sm-6 col-lg-8 py-3  grid-column">.col-12 .col-sm-6 .col-lg-8</div>
+            <div class="col-6 col-lg-4 py-3  grid-column"> .col-6 .col-lg-4</div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-6 col-sm-4 py-3  grid-column">.col-6 .col-sm-4</div>
+            <div class="col-6 col-sm-4 py-3  grid-column">.col-6 .col-sm-4</div>
+            <div class="col-6 col-sm-4 py-3  grid-column">.col-6 .col-sm-4</div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
