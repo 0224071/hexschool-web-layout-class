@@ -50,6 +50,7 @@ let envOptions = {
     src: [
       `${nodePath}/jquery/dist/jquery.slim.min.js`,
       `${nodePath}/bootstrap/dist/js/bootstrap.bundle.min.js`,
+      `${nodePath}/swiper/swiper-bundle.min.js`,
     ],
     concat: "vendors.js",
     path: `${distPath}/assets/js`,

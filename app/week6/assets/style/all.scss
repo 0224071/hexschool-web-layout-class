@@ -4,6 +4,10 @@
 @import "./helpers/variables";
 @import "base";
 @import "utilities";
+
+
+
+
 //元件
 @import "./components/timeline";
 @import "./components/swiper";
@@ -13,3 +17,8 @@
 @import "./layout/header";
 
 //頁面
+
+
+
+//外部SCSS
+@import "../../../../node_modules/swiper/swiper";
